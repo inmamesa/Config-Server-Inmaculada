@@ -1,0 +1,8 @@
+server:
+  port: 8888
+  
+spring:  #Spring Cloud Config Server Repository
+  cloud:    config:      server:        git:
+          uri: https://github.com/inmamesa/bootcamp-ConfigServer.git
+          default-label: main
+          search-paths:          - '*service'
